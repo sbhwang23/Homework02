@@ -5,7 +5,7 @@
     padding: 0;
     position: relative; 
     }
-    
+
 body {
     margin-bottom: 4rem;
 }
@@ -28,25 +28,8 @@ header p {
     background-color: lavenderblush;
 }
 
-.column {
-    width: 100%;
-    padding-right: 1rem;
-    padding-left: 2rem;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-
-img {
-    max-width: 100%;
-    width: 9rem;
-    height: auto;
-    padding: 1rem;
-    position: relative;
-}
-
 footer {
-    position: fixed;
+    position: sticky;
     bottom: 0;
     width: 100%;
     height: 0.75;
@@ -54,6 +37,35 @@ footer {
     background-color: lavender;
 } 
 
+/* About me */
+.column {
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.responsive {
+    padding: 1rem;
+    margin: 1rem:
+}
+
+/* Portfolio */
+img {
+    max-width: 100%;
+    width: 9rem;
+    height: auto;
+    position: relative;
+    float: left;
+    vertical-align: middle;
+}
+
+.link{
+    display: inline-block;
+    padding: 1.7rem 0rem;
+    margin: 1.7rem 0rem;
+}
 
 /* Contact page */
 .col-sm-6 {
@@ -66,14 +78,27 @@ section h3 {
     margin-top: 1rem;
 }
 
+@media screen and (max-width:320px) {
+    .link{
+        display: inline-block;
+        padding: 0rem;
+        margin: 0rem .75rem;
+    }
+}
+
 @media screen and (max-width: 576px) {
     .navbar-toggler {
         background-color: lavender;
     }
-}
-
-@media screen and (min-width: 1024px) {
-    * {
-        font-size: 1.5rem;
+    .responsive {
+        width: 100%;
+        height: auto;
     }
 }
+
+@media screen and (max-width: 1200px) {
+    .column p {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
