@@ -7,9 +7,9 @@
     }
 
 body {
-    margin-bottom: 4rem;
+    min-height: 100%;
 }
-
+   
 header {
     text-align: center;
     font-family: 'Roboto', sans-serif;
@@ -19,6 +19,7 @@ header {
 header p {
    margin-top: -0.5px;
 }
+
 #navbarNav {
     background-color: lavender;
     width: 100%;
@@ -32,27 +33,26 @@ footer {
     position: sticky;
     bottom: 0;
     width: 100%;
-    height: 0.75;
     text-align: center;
     background-color: lavender;
+    margin-top: 4rem;
 } 
 
 /* About me */
 .column {
     width: 100%;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    margin-right: auto;
-    margin-left: auto;
+    padding: 0rem 1rem;
+    margin: auto;
 }
 
 .responsive {
     padding: 1rem;
-    margin: 1rem:
+    margin: 1rem;
+    float: left;
 }
 
 /* Portfolio */
-img {
+.responsive-img {
     max-width: 100%;
     width: 9rem;
     height: auto;
@@ -82,7 +82,7 @@ section h3 {
     .link{
         display: inline-block;
         padding: 0rem;
-        margin: 0rem .75rem;
+        margin: 0rem 1.75rem;
     }
 }
 
@@ -93,6 +93,10 @@ section h3 {
     .responsive {
         width: 100%;
         height: auto;
+        display: block;
+        padding: 0rem;
+        margin: 0rem 0rem 2rem 0rem;
+        
     }
 }
 
@@ -101,4 +105,6 @@ section h3 {
         margin: 1rem;
         padding: 1rem;
     }
+    
+    
 
